@@ -38,7 +38,8 @@ export const Step4 = ({ register, errors, watch, setValue }) => {
             setValue('selectedDate', date.valueOf(), { shouldValidate: true })
           }}
           shouldDisableDate={validateDate}
-          renderInput={(params) => (
+        >
+          {(params) => (
             <TextField
               {...params}
               error={!!errors.selectedDate}
@@ -46,7 +47,7 @@ export const Step4 = ({ register, errors, watch, setValue }) => {
               fullWidth
             />
           )}
-        />
+        </DatePicker>
       </LocalizationProvider>
     </>
   )
