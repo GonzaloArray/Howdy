@@ -25,10 +25,8 @@ export const AutoCompleteInput = ({
 
   useEffect(() => {
     const result = watch(name)
-    setCountry({
-      value: result?.toLowerCase() ?? '',
-      title: result ?? ''
-    })
+    const matchingOption = items.find(option => option.title === result)
+    setCountry(matchingOption || null)
   }, [])
 
   return (
@@ -50,7 +48,7 @@ export const AutoCompleteInput = ({
         autoHighlight
         getOptionLabel={(option) => option.title}
         isOptionEqualToValue={(option, value) =>
-          option?.title === value?.title}
+          option?.title === value?.title && option?.value === value?.value}
         renderInput={(params) => (
           <TextField
             {...params}
