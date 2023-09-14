@@ -1,0 +1,226 @@
+{
+	"Header": {
+		"Menu": "Menu",
+		"Blog": "Blog",
+		"AboutUs": "About Us",
+		"SignUp": "Sign Up",
+		"LogIn": "Log In",
+		"LogOut": "Log Out",
+		"Notif": {
+			"Title": "Friend Requests",
+			"Empty": "No friend requests yet"
+		}
+	},
+	"HomeLog": {
+		"Search": "Search...",
+		"Upload": {
+			"Post": "Upload Post",
+			"Pic": "Photo",
+			"Vid": "Video",
+			"Aud": "Audio"
+		},
+		"Post": {
+			"Interest": "People You May Know",
+			"Modal": {
+				"TimeEdit": "hour • Edited",
+				"Friend": "Friend",
+				"Pending": "Request Sent",
+				"NotFriend": "Add Friend",
+				"ViewMore": "view more",
+				"ViewTrans": "View translation",
+				"Comment": "Comments"
+			},
+			"React": {
+				"Listen": "Listen",
+				"Like": "Like",
+				"Comment": "Comment"
+			},
+			"Send": "Send"
+		}
+	},
+	"Home": {
+		"Header": {
+			"Title": "Talk with Howdy",
+			"Subtitle": "Overcome language barriers by communicating with native speakers and our artificial intelligence.",
+			"Button": {
+				"Login": "Log In",
+				"Register": "Sign Up"
+			}
+		},
+		"Main": {
+			"WhatIs": {
+				"Title": "What is Howdy?",
+				"Subtitle": "The platform to improve communication in other languages with people from all around the world."
+			},
+			"WhyChoose": {
+				"Title": "Why Choose Howdy?",
+				"Choose1": "Chat with Native Speakers",
+				"Choose2": "Translate Messages",
+				"Choose3": "Create Posts",
+				"Choose4": "Get Corrected and Evaluated",
+				"Choose5": "No Language Limits",
+				"Choose6": "Practice with AI",
+				"Choose7": "Save Your Content"
+			},
+			"LangAvailable": {
+				"Title": "Available Languages",
+				"Lang1": "Spanish",
+				"Lang2": "English",
+				"Lang3": "French",
+				"Lang4": "Portuguese",
+				"Lang5": "German",
+				"Lang6": "Italian",
+				"Lang7": "And Many More"
+			},
+			"HowDoes": {
+				"Title": "How Does It Work?",
+				"Step1": "1. Click on 'Sign Up' and create your account. Accessible from your favorite browser and any device.",
+				"Step2": "2. You will see people who speak the language you want to learn and who want to learn your language while teaching theirs.",
+				"Step3": "3. You can choose among them based on your interests and send them a friend request.",
+				"Step4": "4. Complete your profile if you haven't done so already and upload posts. Just like in chats, others can correct you.",
+				"Step5": "5. At any time, choose to practice with AI, which will help you improve your writing and expand your vocabulary.",
+				"Step6": "6. Check out our blog and find helpful guides for language learning."
+			},
+			"Opinions": "What do users say?",
+			"Guide": {
+				"Title": "The Best Steps to Learn a Language",
+				"More": "Read the complete guide",
+				"Subtitle": "Learning guides and updates in our newsletter",
+				"Email": "Email",
+				"Button": "Subscribe",
+				"Disclaimer": "I have read and agree to the privacy policy and subscription conditions for the newsletter."
+			}
+		}
+	},
+	"Profile": {
+		"Desc": {
+			"Title": "Description",
+			"ShowMore": "Show More",
+			"ShowLess": "Show Less"
+		},
+		"Interest": "Interests",
+		"Achievements": {
+			"Title": "Achievements",
+			"Achievement1": "days of use",
+			"Achievement2": "corrections",
+			"Achievement3": "friends",
+			"Achievement4": "posts",
+			"Achievement5": "translations",
+			"Achievement6": "conversations"
+		}
+	},
+	"Chat": {
+		"Friends": "Friends",
+		"NotFriends": "You have no pending chats",
+		"Search": "Search...",
+		"Button": "Chat",
+		"NotChat": {
+			"Title": "Chat with friends",
+			"Subtitle": "Send and receive messages through Howdy, respecting the community."
+		},
+		"Inputs": {
+			"Img": "Selected image:",
+			"Placeholder": "Type here..."
+		}
+	},
+	"Footer": "Privacy Policy",
+	"Login": {
+		"Title": "Log in with Howdy",
+		"Email": "Email",
+		"Password": "Password",
+		"Separator": "or",
+		"Button": {
+			"SignIn": "Log In",
+			"Google": "Log in with Google",
+			"Facebook": "Log in with Facebook",
+			"Register": "Sign Up"
+		},
+		"DoYou": "Don't have an account yet?"
+	},
+	"Register": {
+		"Title": "Sign Up on Howdy",
+		"Name": "Full Name",
+		"Email": "Email",
+		"Password": "Password",
+		"Button": {
+			"Create": "Create Account",
+			"SignIn": "Sign In"
+		},
+		"DoYou": "Already have an account?",
+		"Steps": {
+			"Button": {
+				"Send": "Send",
+				"Next": "Next"
+			},
+			"Step1": {
+				"Title": "Where are you from?",
+				"Desc": "Country of origin",
+				"Label": "Country"
+			},
+			"Step2": {
+				"Title": "Native Language",
+				"Desc": "The official language of your country of birth",
+				"Label": "Native Language"
+			},
+			"Step3": {
+				"Title": "Native Language",
+				"Desc": "Choose the language you want to learn",
+				"SubTitle": "Selected Language",
+				"LanLabel": "Language",
+				"LvlLabel": "Proficiency Level",
+				"Button": "Add Another"
+			},
+			"Step4": {
+				"Title": "When were you born?",
+				"Label": "Birthday",
+				"Button": "Add Another"
+			},
+			"Step5": {
+				"Title1": "How do you describe yourself?",
+				"Desc1": "Tell the world your story",
+				"Label1": "Introduce Yourself",
+				"Placeholder1": "An example: Hi! I'm Lucia, I speak Spanish, and I want to improve my English. Let's chat and help each other practice with real vocabulary.",
+				"Title2": "Preferred Pronoun",
+				"Desc2": "*Optional",
+				"Label2": "Pronoun"
+			},
+			"Step6": {
+				"Title": "Your Profile Picture",
+				"Desc": "Optional step, you can complete it later"
+			},
+			"Step7": {
+				"Title": "Your Interests",
+				"Desc": "Optional step, you can complete it later",
+				"Interest": {
+					"Label": "Interest",
+					"Interest1": "Singing",
+					"Interest2": "Dancing",
+					"Interest3": "Learning",
+					"Interest4": "Laughing",
+					"Interest5": "Sharing"
+				}
+			},
+			"Language": {
+				"English": "English",
+				"Spanish": "Spanish"
+			},
+			"Level": {
+				"Beginner": "Beginner",
+				"Elementary": "Elementary",
+				"Intermediate": "Intermediate",
+				"Advanced": "Advanced",
+				"Excellent": "Excellent"
+			},
+			"Sex": {
+				"He": "He",
+				"She": "She",
+				"They": "They",
+				"Not": "Prefer not to answer"
+			}
+		}
+	},
+	"Error": {
+		"ErrorReq": "This field is required",
+		"ErrorComp": "Complete this field"
+	}
+}

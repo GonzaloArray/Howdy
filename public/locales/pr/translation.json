@@ -1,0 +1,226 @@
+{
+	"Header": {
+		"Menu": "Menu",
+		"Blog": "Blog",
+		"AboutUs": "Sobre Nós",
+		"SignUp": "Registar",
+		"LogIn": "Iniciar Sessão",
+		"LogOut": "Terminar Sessão",
+		"Notif": {
+			"Title": "Pedidos de Amizade",
+			"Empty": "Ainda não há pedidos de amigos"
+		}
+	},
+	"HomeLog": {
+		"Search": "Buscar...",
+		"Upload": {
+			"Post": "Publicar",
+			"Pic": "Foto",
+			"Vid": "Vídeo",
+			"Aud": "Áudio"
+		},
+		"Post": {
+			"Interest": "Pessoas que podem te interessar",
+			"Modal": {
+				"TimeEdit": "hora • Editado",
+				"Friend": "Amigo",
+				"Pending": "Solicitação enviada",
+				"NotFriend": "Adicionar Amigo",
+				"ViewMore": "ver mais",
+				"ViewTrans": "Ver tradução",
+				"Comment": "Comentários"
+			},
+			"React": {
+				"Listen": "Ouvir",
+				"Like": "Curtir",
+				"Comment": "Comentar"
+			},
+			"Send": "Enviar"
+		}
+	},
+	"Home": {
+		"Header": {
+			"Title": "Converse com o Howdy",
+			"Subtitle": "Supere sua barreira comunicando-se com pessoas nativas e com a ajuda de nossa inteligência artificial",
+			"Button": {
+				"Login": "Iniciar Sessão",
+				"Register": "Registre-se"
+			}
+		},
+		"Main": {
+			"WhatIs": {
+				"Title": "O que é o Howdy?",
+				"Subtitle": "A plataforma para melhorar a comunicação em outros idiomas com pessoas de todo o mundo"
+			},
+			"WhyChoose": {
+				"Title": "Por que escolher o Howdy?",
+				"Choose1": "Converse com Nativos",
+				"Choose2": "Traduza as mensagens",
+				"Choose3": "Crie Publicações",
+				"Choose4": "Corrija e seja avaliado",
+				"Choose5": "Sem limite de idiomas",
+				"Choose6": "Pratique com a IA",
+				"Choose7": "Guarde seu conteúdo"
+			},
+			"LangAvailable": {
+				"Title": "Idiomas disponíveis",
+				"Lang1": "Espanhol",
+				"Lang2": "Inglês",
+				"Lang3": "Francês",
+				"Lang4": "Português",
+				"Lang5": "Alemão",
+				"Lang6": "Italiano",
+				"Lang7": "E muitos mais"
+			},
+			"HowDoes": {
+				"Title": "Como funciona?",
+				"Step1": "1. Clique em 'Registre-se' e crie sua conta. Acesse pelo seu navegador favorito e a partir de qualquer dispositivo.",
+				"Step2": "2. Você verá pessoas que falam o idioma que você deseja aprender e que querem ensinar o deles enquanto aprendem o seu.",
+				"Step3": "3. Você poderá escolher entre eles de acordo com seu interesse e enviar solicitações de amizade.",
+				"Step4": "4. Complete seu perfil, se ainda não o fez, e envie publicações. Assim como nas conversas, eles poderão corrigi-lo.",
+				"Step5": "5. A qualquer momento, escolha se deseja fazer exercícios com a IA, o que ajudará a aprimorar sua escrita e ampliar seu vocabulário.",
+				"Step6": "6. Confira nosso blog e encontre guias úteis para estudar um idioma."
+			},
+			"Opinions": "O que os usuários estão dizendo?",
+			"Guide": {
+				"Title": "Os melhores passos para aprender um idioma",
+				"More": "Leia o guia completo",
+				"Subtitle": "Guias de aprendizagem e novidades em nossa newsletter",
+				"Email": "E-mail",
+				"Button": "Inscrever-me",
+				"Disclaimer": "Li e aceito a política de privacidade e as condições de inscrição na newsletter"
+			}
+		}
+	},
+	"Profile": {
+		"Desc": {
+			"Title": "Descrição",
+			"ShowMore": "Ver mais",
+			"ShowLess": "Ver menos"
+		},
+		"Interest": "Interesses",
+		"Achievements": {
+			"Title": "Conquistas",
+			"Achievement1": "dias de uso",
+			"Achievement2": "correções",
+			"Achievement3": "amigos",
+			"Achievement4": "publicações",
+			"Achievement5": "traduções",
+			"Achievement6": "conversas"
+		}
+	},
+	"Chat": {
+		"Friends": "Amigos",
+		"NotFriends": "Você não tem conversas pendentes",
+		"Search": "Buscar...",
+		"Button": "Conversar",
+		"NotChat": {
+			"Title": "Conversar com amigos",
+			"Subtitle": "Envie e receba mensagens através do Howdy. Respeitando a comunidade."
+		},
+		"Inputs": {
+			"Img": "Imagem selecionada:",
+			"Placeholder": "Escreva aqui..."
+		}
+	},
+	"Footer": "Política de privacidade",
+	"Login": {
+		"Title": "Faça login no Howdy",
+		"Email": "E-mail",
+		"Password": "Senha",
+		"Separator": "ou",
+		"Button": {
+			"SignIn": "Faça login",
+			"Google": "Faça login com o Google",
+			"Facebook": "Faça login com o Facebook",
+			"Register": "Cadastre-se"
+		},
+		"DoYou": "Ainda não tem uma conta?"
+	},
+	"Register": {
+		"Title": "Registre-se no Howdy",
+		"Name": "Nome Completo",
+		"Email": "E-mail",
+		"Password": "Senha",
+		"Button": {
+			"Create": "Criar conta",
+			"SignIn": "Iniciar sessão"
+		},
+		"DoYou": "Já tem uma conta?",
+		"Steps": {
+			"Button": {
+				"Send": "Enviar",
+				"Next": "Próximo"
+			},
+			"Step1": {
+				"Title": "De onde você é?",
+				"Desc": "País de origem",
+				"Label": "País"
+			},
+			"Step2": {
+				"Title": "Idioma nativo",
+				"Desc": "É o idioma oficial do seu país de nascimento",
+				"Label": "Idioma nativo"
+			},
+			"Step3": {
+				"Title": "Idioma que deseja aprender",
+				"Desc": "Escolha o idioma que deseja aprender",
+				"SubTitle": "Idioma selecionado",
+				"LanLabel": "Idioma",
+				"LvlLabel": "Nível de conhecimento",
+				"Button": "Adicionar outro"
+			},
+			"Step4": {
+				"Title": "Quando você nasceu?",
+				"Label": "Data de nascimento",
+				"Button": "Adicionar outro"
+			},
+			"Step5": {
+				"Title1": "Como você se descreve?",
+				"Desc1": "Conte ao mundo a sua história",
+				"Label1": "Apresentação",
+				"Placeholder1": "Exemplo: Olá! Sou a Lúcia, falo espanhol e quero melhorar meu inglês. Vamos conversar e nos ajudar a praticar com vocabulário real.",
+				"Title2": "Qual pronome você prefere?",
+				"Desc2": "*Opcional",
+				"Label2": "Pronome"
+			},
+			"Step6": {
+				"Title": "Sua imagem de perfil",
+				"Desc": "Etapa opcional, você pode completá-la mais tarde"
+			},
+			"Step7": {
+				"Title": "Seus interesses",
+				"Desc": "Etapa opcional, você pode completá-la mais tarde",
+				"Interest": {
+					"Label": "Interesse",
+					"Interest1": "Cantar",
+					"Interest2": "Dançar",
+					"Interest3": "Aprender",
+					"Interest4": "Rir",
+					"Interest5": "Compartilhar"
+				}
+			},
+			"Language": {
+				"English": "Inglês",
+				"Spanish": "Espanhol"
+			},
+			"Level": {
+				"Beginner": "Iniciante",
+				"Elementary": "Elementar",
+				"Intermediate": "Intermediário",
+				"Advanced": "Avançado",
+				"Excellent": "Excelente"
+			},
+			"Sex": {
+				"He": "Ele",
+				"She": "Ela",
+				"They": "Elu",
+				"Not": "Prefiro não responder"
+			}
+		}
+	},
+	"Error": {
+		"ErrorReq": "Este campo é obrigatório",
+		"ErrorComp": "Complete este campo"
+	}
+}
