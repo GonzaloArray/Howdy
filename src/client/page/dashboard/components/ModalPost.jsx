@@ -9,7 +9,7 @@ import {
   TextField,
   Typography
 } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import { useAppSelector } from '../../../../common/store/config'
 import PanoramaIcon from '@mui/icons-material/Panorama'
 import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack'
@@ -17,6 +17,9 @@ import CloseIcon from '@mui/icons-material/Close'
 import { useForm } from 'react-hook-form'
 import { collection, doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore'
 import { db } from '../../../../service/firebase'
+import { t } from 'i18next'
+import { BoxCloseTag } from './ModalPOst.style'
+import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage'
 
 const style = {
   position: 'absolute',
@@ -33,16 +36,27 @@ const style = {
 
 export const ModalPost = ({ open, close, setModal }) => {
   const user = useAppSelector((state) => state.auth.user)
+  const [selectedFile, setSelectedFile] = useState(null)
 
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors, isValid }
   } = useForm({ mode: 'all' })
 
   const eventSubmit = async (data) => {
+    const storage = getStorage()
+    let downloadURL
     try {
+      if (data.image) {
+        const filename = `commentPicture-${selectedFile.name}-${crypto.randomUUID()}`
+        const storageRef = ref(storage, `commentPicture/${filename}`)
+        await uploadBytes(storageRef, selectedFile)
+        downloadURL = await getDownloadURL(storageRef)
+      }
+
       const newDocRef = doc(collection(db, 'comment'))
       const docRef = doc(db, 'profile', user.user.uid)
       const docSnap = await getDoc(docRef)
@@ -67,14 +81,22 @@ export const ModalPost = ({ open, close, setModal }) => {
         idUSer: user.user.uid,
         lanNative: lan.native,
         lanLearning: lan.learning,
-        timestamp: serverTimestamp()
+        timestamp: serverTimestamp(),
+        image: downloadURL || ''
       })
 
       reset()
       setModal(false)
+      setSelectedFile(null)
     } catch (error) {
       console.error('Error al enviar el comentario a Firebase:', error)
     }
+  }
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0]
+    setSelectedFile(file)
+    setValue('image', file)
   }
 
   return (
@@ -120,17 +142,48 @@ export const ModalPost = ({ open, close, setModal }) => {
               error={!!errors.selectComment}
               helperText={errors.selectComment && 'Este campo es requerido'}
             />
+            {selectedFile && (
+              <div>
+                <p>{t('Chat.Inputs.Img')}</p>
+                <BoxCloseTag>
+                  <Button onClick={() => setSelectedFile(null)}>x</Button>
+                  <img
+                    src={URL.createObjectURL(selectedFile)}
+                    alt='Vista previa'
+                    style={{ width: '100px', height: '100px', objectFit: 'cover' }}
+                  />
+                </BoxCloseTag>
+              </div>
+            )}
           </Grid>
           <Grid container my={2}>
             <Grid item xs={1}>
-              <IconButton>
-                <PanoramaIcon fontSize='large' />
-              </IconButton>
+              <Box sx={{ display: 'flex', padding: 0, margin: 0 }}>
+                <input
+                  type='file'
+                  style={{ display: 'none' }}
+                  id='file'
+                  onChange={handleFileChange}
+                  name='file'
+                />
+                <label htmlFor='file' style={{ cursor: 'pointer', margin: 0, padding: 0 }}>
+                  <PanoramaIcon fontSize='large' />
+                </label>
+              </Box>
             </Grid>
             <Grid item xs={1}>
-              <IconButton>
-                <VideoCameraBackIcon fontSize='large' />
-              </IconButton>
+              <Box sx={{ display: 'flex', padding: 0, margin: 0 }}>
+                <input
+                  type='file'
+                  style={{ display: 'none' }}
+                  id='file'
+                  onChange={handleFileChange}
+                  name='file'
+                />
+                <label htmlFor='file' style={{ cursor: 'pointer', margin: 0, padding: 0 }}>
+                  <VideoCameraBackIcon fontSize='large' />
+                </label>
+              </Box>
             </Grid>
           </Grid>
           <Divider />
