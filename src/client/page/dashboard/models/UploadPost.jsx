@@ -1,11 +1,7 @@
 import { styled } from 'styled-components'
-import { Avatar, Divider } from '@mui/material'
-import { PostButton } from '../../../../common/components/PostButton'
+import { Avatar } from '@mui/material'
 import { useAppSelector } from '../../../../common/store/config'
 
-import foto from './img/foto.svg'
-import video from './img/video.svg'
-import audio from './img/audio.svg'
 import add from './img/add.svg'
 import { useTranslation } from 'react-i18next'
 
@@ -34,6 +30,7 @@ const UploadPostStyled = styled.section`
         gap: 0.25rem;
         flex: 1 0 0;
         align-self: stretch;
+        cursor: pointer;
 
         color: #49454F;
         border-radius: 28px;
@@ -61,42 +58,17 @@ const UploadPostStyled = styled.section`
 
 `
 
-const data = [
-  {
-    label: 'Pic',
-    onClick: '',
-    icon: foto
-  },
-  {
-    label: 'Vid',
-    onClick: '',
-    icon: video
-  },
-  {
-    label: 'Aud',
-    onClick: '',
-    icon: audio
-  }
-]
-
 const UploadPost = ({ click }) => {
   const { t } = useTranslation()
 
   const auth = useAppSelector((state) => state.auth.user)
+
   return (
     <UploadPostStyled>
       <div className='container'>
         <div className='input-div'>
           <Avatar src={auth.user.photo ? auth.user.photo : ''} />
           <button onClick={click}>{t('HomeLog.Upload.Post')}</button>
-        </div>
-        <Divider className='divider-post' />
-        <div className='btn-div'>
-          {
-            data.map((btn, i) => {
-              return <PostButton key={i} click={btn?.onClick} icon={btn?.icon} label={t(`HomeLog.Upload.${btn?.label}`)} />
-            })
-          }
         </div>
       </div>
     </UploadPostStyled>
