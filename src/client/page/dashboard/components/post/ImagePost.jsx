@@ -7,10 +7,10 @@ const Image = styled.img`
   object-fit: cover;
 `
 
-export const ImagePost = () => {
+export const ImagePost = ({ img }) => {
   return (
     <>
-      <Image src='https://images.unsplash.com/photo-1549388604-817d15aa0110' alt='prueba' />
+      <Image src={img} alt='prueba' />
     </>
   )
 }
