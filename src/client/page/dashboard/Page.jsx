@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { SearchContained } from './components/SearchContained'
 import { ContainedPost } from '../../../common/style/container/ContainedPost'
 import { TitleSeparator } from './components/TitleSeparator'
-// import { useAppSelector } from '../../../common/store/config'
 import { Post } from './models/Post'
 import { PublicComment } from './models/PublicComment'
 import { ModalPost } from './components/ModalPost'
@@ -71,6 +70,7 @@ export const Page = () => {
           photo={e?.photo}
           idUser={e?.idUSer}
           idPost={e?.id}
+          img={e?.image}
         />
       ))}
       <ModalPost setModal={setModal} open={modal} close={handleCloseModal} />
