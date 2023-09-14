@@ -28,8 +28,12 @@ export const SelectedInterest = ({
   const [interests, setInterests] = useState([])
 
   const handleChangeName = (event) => {
-    if (!interests.includes(event.target.value)) {
-      setChipName(() => event.target.value)
+    const label = event.target.value
+
+    const findLabelELement = interests.find(interest => interest.data.includes(label))
+
+    if (!findLabelELement) {
+      setChipName(() => label)
       setInterests((data) => [...data, { data: event.target.value, id: crypto.randomUUID() }])
       setValue(name, interests)
     }
