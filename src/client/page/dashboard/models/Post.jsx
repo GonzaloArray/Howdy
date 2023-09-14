@@ -21,10 +21,8 @@ const PublicComment = styled.section`
     margin-bottom: 0.5rem;
   }
 `
-export const Post = ({ name, description, photo, idUser, idPost }) => {
+export const Post = ({ name, description, photo, idUser, idPost, img }) => {
   const { t } = useTranslation()
-
-  console.log(idPost)
 
   return (
     <PublicComment>
@@ -34,7 +32,12 @@ export const Post = ({ name, description, photo, idUser, idPost }) => {
       <button>
         {t('HomeLog.Post.Modal.ViewTrans')}
       </button>
-      <ImagePost />
+      {
+
+      }
+      {
+        img && <ImagePost img={img} />
+      }
       <CommentPost idPost={idPost} />
 
     </PublicComment>
